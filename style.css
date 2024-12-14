@@ -106,17 +106,22 @@ li{
   flex-wrap: wrap;
   transition: all 0.5s ease;
 }
-.span{
+.card .span{
   display: block;
   margin-bottom: 5px;
   text-transform: uppercase;
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
 }
 .card{
   opacity: 0; 
   text-align: center;
-  transition: opacity 0.5s ease;
   width: 150px;
-  height: 130px;
+  max-height: 130px;
+  min-height: 130px;
   padding: 20px;
   margin: 0;
   background-color: lightblue;   
@@ -124,6 +129,9 @@ li{
   cursor: pointer;
   transition: all 0.5s ease;
   margin-bottom: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .card:hover{
   transform: scale(1.1);
